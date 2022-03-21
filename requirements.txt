@@ -1,0 +1,15 @@
+audioread
+h5py
+librosa
+matplotlib
+pandas
+scikit-learn
+scipy
+six
+SoundFile
+sox
+tqdm
+numba
+numpy
+scipy
+jupyter
