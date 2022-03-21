@@ -129,7 +129,7 @@ if __name__ == "__main__":
     parser.add_argument("--accelerator", default="ddp", type=str)
     parser.add_argument('--local_rank', type=int, default=0)
     parser.add_argument('--num_nodes', type=int, default=1)
-    parser.add_argument("--reproduce", default=False, type=str2bool)
+    parser.add_argument("--reproduce", default=True, type=str2bool)
     # parser.add_argument("--deterministic", default=True, type=str2bool)
     # parser.add_argument("--benchmark", default=False, type=str2bool)
 

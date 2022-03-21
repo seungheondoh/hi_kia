@@ -1,3 +1,5 @@
+pytorch-lightning==1.4.9
+transformers==4.12.5
 audioread
 h5py
 librosa
@@ -13,3 +15,5 @@ numba
 numpy
 scipy
 jupyter
+omegaconf
+wandb

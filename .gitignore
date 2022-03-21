@@ -3,6 +3,9 @@ wandb/
 env/
 grid_search/
 lightning_logs/
+*.ckpt
+*.png
+*.pt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

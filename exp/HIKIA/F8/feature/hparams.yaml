@@ -1,0 +1,14 @@
+root: ./dataset
+data_type: HIKIA
+feature_type: wav2vec
+freeze_type: feature
+cv_split: F8
+batch_size: 1
+num_workers: 8
+lr: 5.0e-05
+max_epochs: 200
+gpus: '0'
+accelerator: ddp
+local_rank: 0
+num_nodes: 1
+reproduce: false
