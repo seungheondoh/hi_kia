@@ -111,8 +111,8 @@ if __name__ == "__main__":
     parser.add_argument("--feature_type", default="wav2vec", type=str)
     parser.add_argument("--freeze_type", default="feature", type=str)
     parser.add_argument("--cv_split", default="M1", type=str)
-    parser.add_argument("--batch_size", default=2, type=int)
-    parser.add_argument("--num_workers", default=4, type=int)
+    parser.add_argument("--batch_size", default=1, type=int)
+    parser.add_argument("--num_workers", default=8, type=int)
     # runner 
     parser.add_argument("--lr", default=5e-5, type=float)
     # trainer

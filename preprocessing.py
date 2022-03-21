@@ -72,20 +72,20 @@ def HIKIA_processor(dataset_path):
         'n':"neutral"
     }
     df_items = df_items.replace({"emo": emotino_dict})
-    df_items.to_csv(os.path.join(dataset_path, "split", "annotation.csv"))
-    lb = preprocessing.LabelBinarizer()
-    binary = lb.fit_transform(df_items['emo'])
-    df_binary = pd.DataFrame(binary, index=df_items.index, columns=lb.classes_)
-    for gen_pid in set(df_items['gen_pid']):
-        EVAL_item = df_items[df_items['gen_pid'] == gen_pid].index
-        TRAIN_item = df_items[df_items['gen_pid'] != gen_pid].index
-        df_test = df_binary.loc[EVAL_item]
-        df_train, df_valid = valid_datasplit(df_binary.loc[TRAIN_item])
-        df_train.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_train.csv"))
-        df_valid.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_valid.csv"))
-        df_test.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_eval.csv"))
-        print(df_train.sum(), df_valid.sum(), df_test.sum())
-        print("="*10)
+    # df_items.to_csv(os.path.join(dataset_path, "split", "annotation.csv"))
+    # lb = preprocessing.LabelBinarizer()
+    # binary = lb.fit_transform(df_items['emo'])
+    # df_binary = pd.DataFrame(binary, index=df_items.index, columns=lb.classes_)
+    # for gen_pid in set(df_items['gen_pid']):
+    #     EVAL_item = df_items[df_items['gen_pid'] == gen_pid].index
+    #     TRAIN_item = df_items[df_items['gen_pid'] != gen_pid].index
+    #     df_test = df_binary.loc[EVAL_item]
+    #     df_train, df_valid = valid_datasplit(df_binary.loc[TRAIN_item])
+    #     df_train.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_train.csv"))
+    #     df_valid.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_valid.csv"))
+    #     df_test.to_csv(os.path.join(dataset_path, "split", f"{gen_pid}_eval.csv"))
+    #     print(df_train.sum(), df_valid.sum(), df_test.sum())
+    #     print("="*10)
 
 # def TESS_processor(tess_path):
 #     wav_path = os.path.join(tess_path, "wav")

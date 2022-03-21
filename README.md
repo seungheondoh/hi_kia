@@ -1,13 +1,12 @@
 # Extracting User’s Mood from Wake-Up Words
 
-- 
-
 Wake-up word emotion recognition is a task to capture the speakers’ emotional state using short lexically-matched speech such as Ok Google or Hey Siri.
 
 - [Dataset & Pretrained Model at Zenodo]()
 
 ## Reference
 Extracting User’s Mood from Wake-Up Words, Interspeech 2022 (submitted) [[will be updated]()]
+
 -- Taesu Kim*, SeungHeon Doh*, Gyunpyo Lee, Hyung seok Jun, Juhan Nam, Hyeon-Jeong Suk (* Equally contributing authors)
 
 ## Requirements
@@ -38,10 +37,10 @@ pip install -r requirements.txt
 3. training options:  
     classification
 
-        cd midi_cls
-        python train_test.py --midi {midi_like or remi} --task ar_va
-        python train_test.py --midi {midi_like or remi} --task arousal
-        python train_test.py --midi {midi_like or remi} --task valence
+        python train.py --freeze_type none
+        python train.py --freeze_type feature # best option
+        python train.py --freeze_type context
+        python train.py --freeze_type all
 
 
 Fore more examples, check bash files under `scripts` folder. 
