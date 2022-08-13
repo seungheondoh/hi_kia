@@ -11,7 +11,7 @@ Wake-up word emotion recognition is a task to capture the speakers’ emotional 
 
 
 ## Reference
-Extracting User’s Mood from Wake-Up Words, Interspeech 2022 (submitted) [[will be updated]()]
+Extracting User’s Mood from Wake-Up Words [[will be updated]()]
 
 -- Taesu Kim*, SeungHeon Doh*, Gyunpyo Lee, Hyung seok Jun, Juhan Nam, Hyeon-Jeong Suk (* Equally contributing authors)
 
