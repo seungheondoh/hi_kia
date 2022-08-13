@@ -2,8 +2,7 @@
 
 Wake-up word emotion recognition is a task to capture the speakers’ emotional state using short lexically-matched speech such as Ok Google or Hey Siri.
 
-- [Dataset & Pretrained Model at Zenodo](https://doi.org/10.5281/zenodo.6342443)
-
+- [Dataset & Pretrained Model at Zenodo](https://zenodo.org/record/6989810)
 
 <p align = "center">
 <img src = "https://i.imgur.com/agVKKRb.png">
@@ -32,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ## Training
-1. Download the data files from [HERE](https://doi.org/10.5281/zenodo.6342443).
+1. Download the data files from [HERE](https://zenodo.org/record/6989810)
     
 2. Preprocessing
     audio: resampling to 16000
