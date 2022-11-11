@@ -1,8 +1,8 @@
-# Extracting User’s Mood from Wake-Up Words
+# Hi, KIA: A Speech Emotion Recognition Dataset for Wake-Up Words
 
 Wake-up word emotion recognition is a task to capture the speakers’ emotional state using short lexically-matched speech such as Ok Google or Hey Siri.
 
-- [Dataset & Pretrained Model at Zenodo](https://zenodo.org/record/6989810)
+- [Dataset & Pretrained Model at Zenodo](https://zenodo.org/record/7091465)
 
 <p align = "center">
 <img src = "https://i.imgur.com/agVKKRb.png">
@@ -10,9 +10,16 @@ Wake-up word emotion recognition is a task to capture the speakers’ emotional 
 
 
 ## Reference
-Extracting User’s Mood from Wake-Up Words [[will be updated]()]
+Hi, KIA: A Speech Emotion Recognition Dataset for Wake-Up Words [[ArXiv](https://arxiv.org/abs/2211.03371)]
 
--- Taesu Kim*, SeungHeon Doh*, Gyunpyo Lee, Hyung seok Jun, Juhan Nam, Hyeon-Jeong Suk (* Equally contributing authors)
+```
+@inproceedings{kim2022hi,
+  title={Hi, KIA: A Speech Emotion Recognition Dataset for Wake-Up Words},
+  author={Taesu Kim, SeungHeon Doh, Gyunpyo Lee, Hyung seok Jun, Juhan Nam, Hyeon-Jeong Suk},
+  booktitle={Proceedings of the 14th Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)},
+  year={2022}
+}
+```
 
 ## Requirements
 
